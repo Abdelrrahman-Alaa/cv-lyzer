@@ -1,6 +1,24 @@
 # CV-Lyzer: AI-Powered Applicant Tracking System
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-https%3A%2F%2Fcv--lyzer.vercel.app-blue?logo=vercel)](https://cv-lyzer.vercel.app/)
+<p align="center">
+  <a href="https://cv-lyzer.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-blue?logo=vercel&style=for-the-badge" alt="Live Demo" />
+  </a>
+</p>
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="public/images/resume-1.png" alt="Dashboard Screenshot" width="600" />
+  <br/>
+  <img src="public/images/resume-2.png" alt="Resume Upload Screenshot" width="600" />
+  <br/>
+  <img src="public/images/resume-scan.gif" alt="Resume Scan Animation" width="600" />
+</p>
+
+---
 
 CV-Lyzer is a modern, enterprise-ready, AI-powered Applicant Tracking System (ATS) designed to streamline the recruitment process. Built with React Router, TypeScript, and Tailwind CSS, it offers a robust, scalable, and production-ready solution for parsing, analyzing, and managing resumes with advanced features and a beautiful UI.
 
