@@ -12,9 +12,7 @@
 
 <p align="center">
   <img src="public/images/Screenshot 1.png" alt="Dashboard Screenshot" width="600" />
-
----
-
+ <hr>
   <img src="public/images/Screenshot 2.png" alt="Resume Upload Screenshot" width="600" />
   <br/>
 </p>
