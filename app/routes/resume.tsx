@@ -52,45 +52,51 @@ const resume = () => {
 
   return (
     <main className="!pt-0 bg-[url('/images/bg-small.svg')] bg-cover bg-center">
-      <nav className="resume-nav">
-        <Link to={"/"} className="back-button">
-          <img src="/icons/back.svg" alt="back logo" className="size-2.5" />
-          <span className="text-gray-800 text-sm font-semibold">
-            Back to Homepage
-          </span>
-        </Link>
-      </nav>
-      <div className="flex flex-row w-full max-lg:flex-col-reverse ">
-        <section className="feedback-section bg-cover sticky top-0 h-[100vh] justify-center items-center">
-          {imageUrl && resumeUrl && (
-            <div className="animate-in fade-in duration-1000 gradient-border max-sm:m-0 h-[90%] max-2xl:h-fit w-fit">
-              <a target="_blank" href={resumeUrl} rel="noreferrer">
-                <img
-                  src={imageUrl}
-                  className="w-full h-full object-contain rounded-2xl"
-                  alt="resume image"
-                  title="Resume Image"
-                />
-              </a>
-            </div>
-          )}
-        </section>
-        <section className="feedback-section ">
-          <h2 className="text-4xl !text-black font-bold">Resume Review</h2>
-          {feedback ? (
-            <div className="flex flex-col animate-in duration-1000 fade-in gap-8">
-              <Summary feedback={feedback}></Summary>
-              <ATS
-                score={feedback.ATS.score || 0}
-                suggestions={feedback.ATS.tips || []}
-              ></ATS>
-              <Details feedback={feedback}></Details>
-            </div>
-          ) : (
-            <img className="w-full" src="/images/resume-scan-2.gif"></img>
-          )}
-        </section>
-      </div>
+      {feedback ? (
+        <>
+          <nav className="resume-nav">
+            <Link to={"/"} className="back-button">
+              <img src="/icons/back.svg" alt="back logo" className="size-2.5" />
+              <span className="text-gray-800 text-sm font-semibold">
+                Back to Homepage
+              </span>
+            </Link>
+          </nav>
+          <div className="flex flex-row w-full max-lg:flex-col-reverse ">
+            <section className="feedback-section bg-cover sticky top-0 h-[100vh] justify-center items-center">
+              {imageUrl && resumeUrl && (
+                <div className="animate-in fade-in duration-1000 gradient-border max-sm:m-0 h-[90%] max-2xl:h-fit w-fit">
+                  <a target="_blank" href={resumeUrl} rel="noreferrer">
+                    <img
+                      src={imageUrl}
+                      className="w-full h-full object-contain rounded-2xl"
+                      alt="resume image"
+                      title="Resume Image"
+                    />
+                  </a>
+                </div>
+              )}
+            </section>
+            <section className="feedback-section ">
+              <h2 className="text-4xl !text-black font-bold">Resume Review</h2>
+
+              <div className="flex flex-col animate-in duration-1000 fade-in gap-8">
+                <Summary feedback={feedback}></Summary>
+                <ATS
+                  score={feedback.ATS.score || 0}
+                  suggestions={feedback.ATS.tips || []}
+                ></ATS>
+                <Details feedback={feedback}></Details>
+              </div>
+            </section>
+          </div>
+        </>
+      ) : (
+        <div className="flex flex-col items-center justify-center h-screen">
+          <h2 className="font-bold ">Reviewing Your Resume</h2>
+          <img className="max-w-96" src="/images/resume-scan-2.gif"></img>
+        </div>
+      )}
     </main>
   );
 };
