@@ -51,7 +51,7 @@ const resume = () => {
   }, [id]);
 
   return (
-    <main className="!pt-0">
+    <main className="!pt-0 bg-[url('/images/bg-small.svg')] bg-cover bg-center">
       <nav className="resume-nav">
         <Link to={"/"} className="back-button">
           <img src="/icons/back.svg" alt="back logo" className="size-2.5" />
@@ -60,8 +60,8 @@ const resume = () => {
           </span>
         </Link>
       </nav>
-      <div className="flex flex-row w-full max-lg:flex-col-reverse">
-        <section className="feedback-section bg-[url('/images/bg-small.svg')] bg-cover sticky top-0 h-[100vh] justify-center items-center">
+      <div className="flex flex-row w-full max-lg:flex-col-reverse ">
+        <section className="feedback-section bg-cover sticky top-0 h-[100vh] justify-center items-center">
           {imageUrl && resumeUrl && (
             <div className="animate-in fade-in duration-1000 gradient-border max-sm:m-0 h-[90%] max-2xl:h-fit w-fit">
               <a target="_blank" href={resumeUrl} rel="noreferrer">
@@ -82,7 +82,7 @@ const resume = () => {
               <Summary feedback={feedback}></Summary>
               <ATS
                 score={feedback.ATS.score || 0}
-                suggestion={feedback.ATS.tips || []}
+                suggestions={feedback.ATS.tips || []}
               ></ATS>
               <Details feedback={feedback}></Details>
             </div>
