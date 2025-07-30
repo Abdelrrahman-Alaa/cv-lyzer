@@ -11,11 +11,10 @@
 ## Screenshots
 
 <p align="center">
-  <img src="public/images/resume-1.png" alt="Dashboard Screenshot" width="600" />
+  <img src="public/images/Screenshot 1.png" alt="Dashboard Screenshot" width="600" />
   <br/>
-  <img src="public/images/resume-2.png" alt="Resume Upload Screenshot" width="600" />
+  <img src="public/images/Screenshot 2.png" alt="Resume Upload Screenshot" width="600" />
   <br/>
-  <img src="public/images/resume-scan.gif" alt="Resume Scan Animation" width="600" />
 </p>
 
 ---
