@@ -12,7 +12,9 @@
 
 <p align="center">
   <img src="public/images/Screenshot 1.png" alt="Dashboard Screenshot" width="600" />
-  <br/>
+
+---
+
   <img src="public/images/Screenshot 2.png" alt="Resume Upload Screenshot" width="600" />
   <br/>
 </p>
@@ -47,6 +49,7 @@ CV-Lyzer is a modern, enterprise-ready, AI-powered Applicant Tracking System (AT
 ## Getting Started
 
 ### Prerequisites
+
 - [Node.js 20+](https://nodejs.org/)
 - [npm 9+](https://www.npmjs.com/)
 - [Docker](https://www.docker.com/) (optional, for containerized deployment)
