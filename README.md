@@ -13,7 +13,8 @@
 <div align="center">
   <img src="public/images/Screenshot 1.png" alt="Dashboard Screenshot" width="600" />
 
----
+<br>
+<br>
 <img src="public/images/Screenshot 2.png" alt="Resume Upload Screenshot" width="600" />
 </div>
 
